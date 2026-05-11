@@ -1,0 +1,7 @@
+﻿.vs
+accuscraperwebwithreact.client/obj
+AccuScraperWebWithReact.Server/bin
+AccuScraperWebWithReact.Server/obj
+AccuScraperWebWithReact.Server/Properties/PublishProfiles
+AccuScraperWebWithReact.Server/AccuScraperWebWithReact.Server.csproj.user
+AccuScraperWebWithReact.Server/AccuScraperWebWithReact.Server.http
