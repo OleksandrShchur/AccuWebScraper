@@ -1,4 +1,6 @@
-﻿namespace AccuScraperWebWithReact.Server.Helpers
+﻿using AccuScraperWebWithReact.Server.Settings;
+
+namespace AccuScraperWebWithReact.Server.Helpers
 {
     public class Scheduler : BackgroundService
     {
