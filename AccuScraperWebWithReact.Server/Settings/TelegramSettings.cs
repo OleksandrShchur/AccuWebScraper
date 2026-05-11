@@ -1,4 +1,4 @@
-namespace AccuScraperWebWithReact.Server.Helpers
+namespace AccuScraperWebWithReact.Server.Settings
 {
     public class TelegramSettings
     {

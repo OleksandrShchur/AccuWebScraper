@@ -1,4 +1,5 @@
 ﻿using AccuScraperWebWithReact.Server.Helpers;
+using AccuScraperWebWithReact.Server.Settings;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccuScraperWebWithReact.Server.Controllers
