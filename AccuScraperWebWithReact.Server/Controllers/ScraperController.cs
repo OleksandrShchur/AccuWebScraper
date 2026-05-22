@@ -30,7 +30,7 @@ namespace AccuScraperWebWithReact.Server.Controllers
                 var kyivTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, kyivTimeZone);
 
                 if (kyivTime.Hour >= 3 && kyivTime.Hour <= 17)
-                    return BadRequest("Time is not in range 6pm - 3am Monday-Saturday.");
+                    return Ok("Time is not in range 6pm - 3am Monday-Saturday.");
 
                 var scrapedPage = await Scraper.ScrapePage(_scraperSettings);
                 var parsedData = Parser.Parse(scrapedPage);
@@ -42,6 +42,8 @@ namespace AccuScraperWebWithReact.Server.Controllers
             }
             catch (Exception ex)
             {
+                await TelegramService.SendErrorMessageAsync($"Contact @OS_immortal ASAP man! Error: {ex.Message}", _telegramSettings);
+
                 return BadRequest(ex.Message);
             }
         }

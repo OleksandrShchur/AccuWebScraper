@@ -45,8 +45,8 @@ namespace AccuScraperWebWithReact.Server.Helpers
             var urls = new[]
             {
                 $"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.MyId}&text={message}",
-                //$"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.TaniaId}&text={message}",
-                //$"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.VovaId}&text={message}"
+                $"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.TaniaId}&text={message}",
+                $"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.VovaId}&text={message}"
             };
 
             foreach (var url in urls)
@@ -61,8 +61,8 @@ namespace AccuScraperWebWithReact.Server.Helpers
             var urls = new[]
             {
                 $"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.MyId}&text={message}",
-                //$"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.TaniaId}&text={message}",
-                //$"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.VovaId}&text={message}"
+                $"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.TaniaId}&text={message}",
+                $"https://api.telegram.org/bot{settings.LogBotToken}/sendMessage?chat_id={settings.VovaId}&text={message}"
             };
 
             foreach (var url in urls)
